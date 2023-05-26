@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SideMenuComponent } from '@app/components/skeleton/side-menu/side-menu.component';
+
 
 @Component({
   selector: 'app-root',
