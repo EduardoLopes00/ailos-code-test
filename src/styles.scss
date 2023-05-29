@@ -1,10 +1,12 @@
 :root {
   --main-blue: #165C7D;
-  --background-blue: #E7EEF1;
+  --ultra-light-blue: #E7EEF1;
   --main-orange: #FFCD75;
   --auxiliar-gray: #9BA2A8;
   --white: #FFFFFF;
   --black: #000000;
+  --red: #FF0000;
+  --disabled-icon: #D4E1E7
   
   font-size: 80%; /* controle das medidas rem */
 }
@@ -15,4 +17,8 @@
     box-sizing: border-box;
 }
 html, body { height: 100%; width: 100% }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
+
+mat-icon {
+  color: var(--white);
+}

@@ -11,6 +11,10 @@ import { HeaderComponent } from './components/skeleton/header/header.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { MemberRegistrationComponent } from './components/member-registration/member-registration.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { NotificationBellComponent } from './components/skeleton/header/notification-bell/notification-bell.component';
+import { MatIconModule } from '@angular/material/icon';
+import { AvatarComponent } from './components/skeleton/header/avatar/avatar.component';
+import { MenuItemComponent } from './components/skeleton/side-menu/menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,16 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     HeaderComponent,
     WelcomeComponent,
     MemberRegistrationComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    NotificationBellComponent,
+    AvatarComponent,
+    MenuItemComponent
   ],
   imports: [
     RouterModule.forRoot(routes),    
     BrowserModule,    
+    MatIconModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

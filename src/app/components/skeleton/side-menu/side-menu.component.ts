@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { menuItems } from '@app/utils/menu-items';
+
 
 @Component({
   selector: 'app-side-menu',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./side-menu.component.scss']
 })
 export class SideMenuComponent {
-
+  menuItems = menuItems
 }

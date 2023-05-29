@@ -1,4 +1,10 @@
 <div class="container">
+    <img class="main-icon" src="../../../../assets/images/simbolo-negativo 6.png" alt="Símbolo da Viacredi">
 
+    <ul>
+        <li *ngFor="let menuItem of menuItems">
+            <app-menu-item [icon]="menuItem.icon">Ola</app-menu-item>    
+        </li>
+    </ul>
 
 </div>

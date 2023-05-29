@@ -11,6 +11,12 @@
     flex-direction: column;
     justify-content: space-between;
 
+    > div {
+         height: 100%;
+         padding: 10px;
+         background-color: var(--ultra-light-blue);
+    }
+
 }
 
 router-outlet {

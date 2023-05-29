@@ -1,4 +1,12 @@
 <div class="container">
-    HEADER COMPONENT
+    <div class="header-label-path-area">
+        <h3>{{menuName}}</h3>
+        <span>{{menuPath}}</span>
+    </div>
 
+    <div class="header-actions-area">
+        <app-notification-bell [qtNotification]="5"></app-notification-bell>
+        <button>VIACREDI</button>
+        <app-avatar></app-avatar>
+    </div>    
 </div>

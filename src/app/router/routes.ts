@@ -6,6 +6,7 @@ import { PageNotFoundComponent } from "@app/components/page-not-found/page-not-f
 export const routes: Route[] = [
     {path: 'welcome', component: WelcomeComponent},
     {path: 'register', component: MemberRegistrationComponent},
+    {path: 'not-found', component: PageNotFoundComponent},
     {path: '', redirectTo: 'welcome', pathMatch: 'full'},
-    {path: '**', component: PageNotFoundComponent}
+    {path: '**', redirectTo: 'not-found'}
 ]
