@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router'
+import { RouteUtilsService } from '@app/services/route-utils.service';
 import { headerDataByRoute } from '@app/utils/headerDataByRoute';
 
 @Component({
@@ -8,16 +8,19 @@ import { headerDataByRoute } from '@app/utils/headerDataByRoute';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  menuName: string = '';
+  menuTitle: string = '';
   menuPath: string = '';
 
-  constructor(private router: Router) {    
-    router.events.subscribe(val => {
-      if (val instanceof NavigationEnd) {
-        this.menuName = headerDataByRoute[val.url].title;
-        this.menuPath = headerDataByRoute[val.url].path
-      }
-    });
+  constructor(private routeUtilsService: RouteUtilsService) {    
+    this.routeUtilsService.actualRoute$.subscribe(val => {
+        console.log(val)
+
+        const {title, path} = headerDataByRoute[val.url] || headerDataByRoute['/not-found']
+      
+        this.menuTitle = title;
+        this.menuPath = path      
+    })
+    
   }
   
   ngOnInit(): void {
@@ -27,7 +30,7 @@ export class HeaderComponent implements OnInit {
   
 
   clickButton() {
-    console.log(this.router.url);
+    
   }
 
   

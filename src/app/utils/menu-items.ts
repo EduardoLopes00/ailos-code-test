@@ -4,7 +4,7 @@ export const menuItems: MenuItem[] = [
     {
         label: "Pesquisar",
         icon: "search",
-        route: "/search",        
+        route: "/register",        
     },
     {
         label: "Favoritos",

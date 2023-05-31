@@ -1,1 +1,7 @@
-<mat-icon class="material-symbols-outlined"  [fontIcon]="icon"></mat-icon>
+<mat-icon 
+    class="material-symbols-outlined" 
+    (click)="handleMenuItemClick()" 
+    [fontIcon]="icon"
+    [style]="isActive ? {color: 'white'} : null"
+    >
+</mat-icon>

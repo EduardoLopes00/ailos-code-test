@@ -2,11 +2,9 @@
   --main-blue: #165C7D;
   --ultra-light-blue: #E7EEF1;
   --main-orange: #FFCD75;
-  --auxiliar-gray: #9BA2A8;
-  --white: #FFFFFF;
+  --auxiliar-gray: #9BA2A8;  
   --black: #000000;
-  --red: #FF0000;
-  --disabled-icon: #D4E1E7
+  --red: #FF0000;  
   
   font-size: 80%; /* controle das medidas rem */
 }
@@ -20,5 +18,5 @@ html, body { height: 100%; width: 100% }
 body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 
 mat-icon {
-  color: var(--white);
+  color: white;
 }

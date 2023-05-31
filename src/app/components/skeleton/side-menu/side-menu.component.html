@@ -1,10 +1,9 @@
 <div class="container">
-    <img class="main-icon" src="../../../../assets/images/simbolo-negativo 6.png" alt="Símbolo da Viacredi">
+    <img class="main-icon" src="../../../../assets/images/simbolo-negativo 6.png" alt="Símbolo da Viacredi" routerLink="/welcome">
 
-    <ul>
+    <ul>        
         <li *ngFor="let menuItem of menuItems">
-            <app-menu-item [icon]="menuItem.icon">Ola</app-menu-item>    
+            <app-menu-item [isActive]="getActivatedRoute(menuItem.route)" [route]="menuItem.route" [icon]="menuItem.icon">Ola</app-menu-item>    
         </li>
     </ul>
-
 </div>

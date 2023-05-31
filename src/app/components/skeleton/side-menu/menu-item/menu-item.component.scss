@@ -1,9 +1,15 @@
 mat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--auxiliar-gray);
+
+    font-size: 1.4rem;
+    cursor: pointer;    
+
+    transition: color .3s;
     
-    font-size: 1.2rem;
-    cursor: pointer;
-    
-    :hover {
-        color: red;
+    &:hover {
+        color: white;
     }
 }

@@ -5,11 +5,20 @@
     background-color: var(--main-blue);
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;   
     
-    ul {
+    img {
+        cursor: pointer;
+    }
+    
+    
+    ul {        
         list-style: none;
-
+                                   
+        li:not(:last-child) { 
+            margin-bottom: 25px;  
+        }
+        
     }
     
     .main-icon {
