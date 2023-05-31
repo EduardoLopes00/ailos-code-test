@@ -6,6 +6,7 @@
   --auxiliar-gray: #9BA2A8;  
   --black: #000000;
   --red: #FF0000;  
+  --light-gray: #889499;
   
   font-size: 80%; /* controle das medidas rem */
 }
@@ -20,4 +21,30 @@ body { margin: 0; font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 
 mat-icon {
   color: white;
+}
+
+.highlightButton {
+  background-color: var(--main-blue);
+  border: 1px solid transparent;    
+  color: white;    
+
+  transition: background-color .2s;
+
+  &:hover {
+      background-color: var(--stronger-main-blue);
+      
+  }
+}
+
+.defaultButton {
+  color: var(--main-blue);
+  background-color: transparent;
+  border: 1px solid var(--main-blue);     
+  
+  transition: background-color .2s;
+
+  &:hover {
+      background-color: var(--ultra-light-blue);
+      
+  }  
 }

@@ -1,0 +1,25 @@
+.container {
+
+    display: flex;
+    // width: fit-content;
+
+    mat-icon {
+        color: var(--light-gray);
+font-size: 5rem;
+        
+    }
+}
+
+.text-and-actions {
+    h3 {
+        font-weight: 400;
+
+        font-size: 1rem;
+    }
+
+    p {
+        margin: 6px 0;
+        font-size: .7rem;
+        width: 170px;
+    }
+}
