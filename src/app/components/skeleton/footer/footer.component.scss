@@ -1,5 +1,48 @@
 .container {
     width: 100%;
-    height: 35px;
-    background-color: white;
+    height: 35px;    
+    padding: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    button {
+        height: 25px;
+        padding: 0 8px;
+        border-radius: 2px;
+        font-size: 0.8rem;        
+
+        cursor: pointer;
+        
+        &:not(:last-child) {
+            margin-right: 6px;
+        }                
+    }
+}
+
+.highlightButton {
+    background-color: var(--main-blue);
+    border: 1px solid transparent;    
+    color: white;    
+
+    transition: background-color .2s;
+
+    &:hover {
+        background-color: var(--stronger-main-blue);
+        
+    }
+}
+
+.defaultButton {
+    color: var(--main-blue);
+    background-color: transparent;
+    border: 1px solid var(--main-blue);     
+    
+    transition: background-color .2s;
+
+    &:hover {
+        background-color: var(--ultra-light-blue);
+        
+    }  
 }

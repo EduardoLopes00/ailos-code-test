@@ -15,6 +15,7 @@ import { NotificationBellComponent } from './components/skeleton/header/notifica
 import { MatIconModule } from '@angular/material/icon';
 import { AvatarComponent } from './components/skeleton/header/avatar/avatar.component';
 import { MenuItemComponent } from './components/skeleton/side-menu/menu-item/menu-item.component';
+import { StepperComponent } from './components/member-registration/stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MenuItemComponent } from './components/skeleton/side-menu/menu-item/men
     PageNotFoundComponent,
     NotificationBellComponent,
     AvatarComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    StepperComponent
   ],
   imports: [
     RouterModule.forRoot(routes),    
