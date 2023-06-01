@@ -11,18 +11,20 @@
     flex-direction: column;
     justify-content: space-between;
 
+    
+    
     > div {
-         height: 100%;
-         padding: 10px;
-         background-color: var(--ultra-light-blue);
-         display: flex;
-         align-items: center;
-         justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        background-color: var(--ultra-light-blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        div:nth-child(1n) {
+            height: 100%;
+            width: 100%;
+        }
     }
-
-}
-
-router-outlet {
-    display: none;
 }

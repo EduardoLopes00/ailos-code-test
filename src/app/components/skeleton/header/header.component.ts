@@ -13,8 +13,6 @@ export class HeaderComponent implements OnInit {
 
   constructor(private routeUtilsService: RouteUtilsService) {    
     this.routeUtilsService.actualRoute$.subscribe(val => {
-        console.log(val)
-
         const {title, path} = headerDataByRoute[val.url] || headerDataByRoute['/not-found']
       
         this.menuTitle = title;
