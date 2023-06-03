@@ -7,7 +7,7 @@ import { headerDataByRoute } from '@app/utils/headerDataByRoute';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   menuTitle: string = '';
   menuPath: string = '';
 
@@ -17,19 +17,6 @@ export class HeaderComponent implements OnInit {
       
         this.menuTitle = title;
         this.menuPath = path      
-    })
-    
-  }
-  
-  ngOnInit(): void {
-    
-  }
-
-  
-
-  clickButton() {
-    
-  }
-
-  
+    })    
+  }      
 }
