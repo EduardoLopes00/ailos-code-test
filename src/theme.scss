@@ -1,0 +1,83 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$ailos-blue-palette: (
+    50 : #E7EEF1,
+    100 : #b9ced8,
+    200 : #8baebe,
+    300 : #5c8da4,
+    400 : #397491,
+    500 : #165c7d,
+    600 : #135475,
+    700 : #104a6a,
+    800 : #0c4160,
+    900 : #06304d,
+    A100 : #81c4ff,
+    A200 : #4eacff,
+    A400 : #1b94ff,
+    A700 : #0289ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$ailos-orange-palette: (
+    50 : #fff9ee,
+    100 : #fff0d6,
+    200 : #ffe6ba,
+    300 : #ffdc9e,
+    400 : #ffd58a,
+    500 : #ffcd75,
+    600 : #ffc86d,
+    700 : #ffc162,
+    800 : #ffba58,
+    900 : #ffae45,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #fff7ec,
+    A700 : #ffebd3,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )    
+);
+
+$my-primary: mat.define-palette($ailos-blue-palette, 500);
+$my-accent: mat.define-palette($ailos-orange-palette);
+
+$my-theme: mat.define-light-theme((
+    color: (
+        primary: $my-primary,
+        accent: $my-accent,        
+    ),
+    typography: mat.define-typography-config(),
+    density: 0,
+));
+
+@include mat.all-component-themes($my-theme);

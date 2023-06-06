@@ -1,3 +1,6 @@
+@import './theme.scss';
+
+
 :root {
   --main-blue: #165C7D;
   --stronger-main-blue: #012F44;
@@ -5,7 +8,7 @@
   --main-orange: #FFCD75;
   --auxiliar-gray: #9BA2A8;  
   --black: #000000;
-  --red: #FF0000;  
+  --red: #B00020;  
   --light-gray: #889499;
   
   font-size: 80%; /* controle das medidas rem */
