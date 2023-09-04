@@ -1,0 +1,31 @@
+.container {
+    ::ng-deep * {
+        font-size: 10px;
+    }
+}
+
+::ng-deep .mat-step-icon-selected {
+    ::after {
+        content: '';
+
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: var(--ultra-light-blue);
+    }
+}
+
+::ng-deep .mat-step-icon {
+    width: 18px!important;
+    height: 18px!important;
+        
+}
+
+::ng-deep .mat-stepper-horizontal-line {
+    color: red;
+    border: 1px solid red;
+}
+
+mat-stepper {
+    background-color: transparent;    
+}

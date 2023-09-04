@@ -1,0 +1,21 @@
+<div class="container">
+  <mat-stepper  [disableRipple]="true" animationDuration="0" labelPosition="bottom" linear #stepper>
+      <mat-step  state="no-icon" label="Inicio" [stepControl]="firstFormGroup" [editable]="isEditable">       
+        <form [formGroup]="firstFormGroup">          
+          <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="firstCtrl" placeholder="Last name, First name" required>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+            
+      <mat-step state="no-icon" label="Documentos" [stepControl]="secondFormGroup" [editable]="isEditable"></mat-step>
+      <mat-step state="no-icon" label="Dados cadastrais"></mat-step>
+      <mat-step state="no-icon" label="Admissão"></mat-step>
+
+      <ng-template  matStepperIcon="no-icon"></ng-template>
+  </mat-stepper>
+</div>

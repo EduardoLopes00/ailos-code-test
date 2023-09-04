@@ -22,3 +22,16 @@
         background-color: var(--ultra-light-blue);        
     }  
 }
+
+.mat-step-header:hover{
+    background-color: transparent!important;
+}
+.mat-step-header.cdk-program-focused {
+      background-color: var(--ultra-light-blue);
+  }
+.mat-step-header.cdk-mouse-focused{
+    background-color: var(--ultra-light-blue);
+}
+.mat-step-header.cdk-focused{
+    background-color: var(--ultra-light-blue);
+}

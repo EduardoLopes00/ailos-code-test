@@ -16,6 +16,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { AvatarComponent } from './components/skeleton/header/avatar/avatar.component';
 import { MenuItemComponent } from './components/skeleton/side-menu/menu-item/menu-item.component';
 import { StepperComponent } from './components/member-registration/stepper/stepper.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 
 @NgModule({
   declarations: [
@@ -29,15 +36,26 @@ import { StepperComponent } from './components/member-registration/stepper/stepp
     NotificationBellComponent,
     AvatarComponent,
     MenuItemComponent,
-    StepperComponent
+    StepperComponent    
   ],
   imports: [
     RouterModule.forRoot(routes),    
-    BrowserModule,    
-    MatIconModule
-    
+    BrowserModule,        
+    BrowserAnimationsModule,    
+    FormsModule,
+    ReactiveFormsModule,    
+    MatIconModule,
+    MatButtonModule,
+    MatStepperModule,
+    MatFormFieldModule,
+    MatInputModule,  
+  ],  
+  providers: [
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: { displayDefaultIndicatorType: false }
+    }
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
